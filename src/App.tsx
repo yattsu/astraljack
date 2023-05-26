@@ -329,7 +329,7 @@ function App() {
                   : "text-slate-300"
               } text-center text-xl`}
             >
-              Current bet: {currentBet}
+              Current bet: <FormatValue value={currentBet} /?
             </div>
             <div className="flex justify-center items-center gap-8">
               {betButtons.map((value) => (
