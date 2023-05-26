@@ -1,6 +1,6 @@
 import "react-toastify/ReactToastify.css";
 
-import { Flip, ToastContainer, toast } from "react-toastify";
+import { Flip, toast, ToastContainer } from "react-toastify";
 import { useEffect, useState } from "react";
 
 import { Card } from "./components/Card";
@@ -329,7 +329,7 @@ function App() {
                   : "text-slate-300"
               } text-center text-xl`}
             >
-              Current bet: <FormatValue value={currentBet} /?
+              Current bet: <FormatValue value={currentBet} />
             </div>
             <div className="flex justify-center items-center gap-8">
               {betButtons.map((value) => (
